@@ -1,0 +1,1 @@
+En este repository se incluiran archivos basicos en donde se explicaran los fundamentos de shell.

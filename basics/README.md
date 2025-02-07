@@ -1,0 +1,1 @@
+En este repository se explica como mostrar el directorio con pwd. 
