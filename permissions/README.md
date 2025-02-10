@@ -1,0 +1,1 @@
+This directory and the files inside it explain permissions in shell.
