@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( $(echo $WATER | tr 'ewatr' '01234') + $(echo $STIR | tr 'ti.ir' '01234') )) | tr '0123456789' 'bestcholhc'
+W=$(echo "$WATER" | cut -d 'e' -f2 | wc -c); S=$(echo "$STIR" | cut -d 't' -f2 | wc -c); echo $(($W + $S)) | cut -c1- | rev
