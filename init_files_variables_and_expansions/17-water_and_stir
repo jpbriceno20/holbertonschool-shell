@@ -1,2 +1,2 @@
 #!/bin/bash
-W=$(echo "$WATER" | cut -d 'e' -f2 | wc -c); S=$(echo "$STIR" | cut -d 't' -f2 | wc -c); echo $(($W + $S)) | cut -c1- | rev
+echo $(( $(echo $WATER | fold -w1 | while read -r c; do echo -n $(( $(expr index "ewatr" "$c") - 1 )); done) + $(echo $STIR | fold -w1 | while read -r c; do echo -n $(( $(expr index "ti.ir" "$c") - 1 )); done) )) | fold -w1 | while read -r c; do printf "%c" "$((98 + c))"; done; echo
